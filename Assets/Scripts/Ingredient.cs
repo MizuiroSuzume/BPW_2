@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JoeyIngredient : MonoBehaviour
+public class Ingredient : MonoBehaviour
 {
-    public JoeyRecipeManager.IngredientType typeOfIngredient;
+    public RecipeManager.IngredientType typeOfIngredient;
 
     public void InPan()
     {
-        JoeyRecipeManager.Instance.AddIngredient(typeOfIngredient);
+        RecipeManager.Instance.AddIngredient(typeOfIngredient);
         Destroy(gameObject);
     }
 

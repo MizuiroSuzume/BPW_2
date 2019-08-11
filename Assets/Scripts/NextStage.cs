@@ -13,6 +13,7 @@ public class NextStage : MonoBehaviour
         button.GetComponent<Image>().enabled = true;
         button.GetComponent<Button>().enabled = true;
         button.transform.GetChild(0).gameObject.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
         Debug.Log("poop");
     }
 

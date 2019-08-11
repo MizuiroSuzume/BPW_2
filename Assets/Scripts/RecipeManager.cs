@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JoeyRecipeManager : MonoBehaviour
+public class RecipeManager : MonoBehaviour
 {
-    public static JoeyRecipeManager Instance;
+    public static RecipeManager Instance;
 
     public enum IngredientType { Cheese, Bread, Leek, Sausage, Flour, Steak, Pistolet }
     [SerializeField] IngredientType[] ingredients = new IngredientType[3];
